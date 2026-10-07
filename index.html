@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You, Love 💌</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background hearts -->
+    <div class="hearts"></div>
+
+    <main class="container">
+
+        <audio id="backgroundMusic" loop>
+             <source src="backsound.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Opening -->
+        <section id="opening" class="screen active">
+
+            <div class="small-text">A little something for you</div>
+
+            <h1>
+                Aku punya<br>
+                <span>sesuatu</span> buat kamu.
+            </h1>
+
+            <p>
+                Tapi sebelum itu...<br>
+                kamu harus berani buka dulu.
+            </p>
+
+            <button onclick="openMessage()">
+                Buka 💌
+            </button>
+
+        </section>
+
+
+        <!-- Message -->
+        <section id="message" class="screen">
+
+            <div class="envelope">💌</div>
+
+            <div class="label">FOR YOU</div>
+
+            <h2 id="compliment">
+                Aku nggak tahu sejak kapan kamu jadi spesial,
+                yang jelas setiap ada kabar dari kamu,
+                mood-ku ikut membaik.
+            </h2>
+
+            <p class="subtext">
+                Dan sepertinya... itu bukan kebetulan.
+            </p>
+
+            <button onclick="nextCompliment()">
+                Gombalan berikutnya ✨
+            </button>
+
+            <button class="secondary" onclick="showFinal()">
+                Ada satu lagi...
+            </button>
+
+        </section>
+
+
+        <!-- Final -->
+        <section id="final" class="screen">
+
+            <div class="big-heart">♥</div>
+
+            <div class="label">ONE LAST THING</div>
+
+            <h1>
+                Hai Sayangg
+            </h1>
+
+            <h1>
+                Kalau Boleh Jujur...
+            </h1>
+
+            <p class="final-text">
+                Aku nggak butuh alasan untuk menyukaimu.
+                Karena ternyata, kamu sendiri sudah cukup
+                menjadi alasannya.
+            </p>
+
+            <button onclick="restart()">
+                Ulangi dari awal ↻
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
